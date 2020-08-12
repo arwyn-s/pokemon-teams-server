@@ -12,3 +12,4 @@ backend for api services and querying tools.
 ```
 /api/v1/pokemons
 ```
+Queries: ?skip={Number}&limit={Number}&type={String}&gen={Number}

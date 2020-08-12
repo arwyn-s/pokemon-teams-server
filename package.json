@@ -1,0 +1,25 @@
+{
+  "name": "pokemon_teams_full",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/arwyn-s/pokemokn-teams-nodejs.git",
+  "author": "arwyn-s",
+  "scripts": {
+    "start": "node index",
+    "server": "nodemon index",
+    "client": "npm start --prefix react-views",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.11.0",
+    "graphql": "^15.3.0",
+    "mongoose": "^5.9.25"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4"
+  }
+}

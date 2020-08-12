@@ -24,7 +24,10 @@ app.use(express.json());
 //Pokemons routes.
 app.use('/api/v1/pokemons',pokemons);
 ///Default URI.
-app.get('*', (req, res) => res.status(204));
+app.get('*', (req, res) => res.status(204).json({
+    success: false,
+    error: "ILLEGAL ACCESS",
+}));
 ///Start the server and listen.
 
 
